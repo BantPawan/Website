@@ -39,9 +39,14 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Default logo size */
     font-weight: 700;
     color: var(--secondary-color);
+    transition: font-size 0.3s ease; /* Smooth transition for logo size */
+}
+
+.logo.big {
+    font-size: 2.5rem; /* Bigger logo size */
 }
 
 .logo span {
@@ -90,7 +95,7 @@ nav ul li a:hover::after {
 
 .hero-title {
     color: var(--secondary-color) !important;
-    font-size: 4rem;
+    font-size: 3.5rem; /* Adjusted for desktop */
     font-weight: 700;
     margin: 1rem 0;
     line-height: 1.2;
@@ -98,7 +103,7 @@ nav ul li a:hover::after {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Adjusted for desktop */
     font-weight: 400;
 }
 
@@ -125,7 +130,7 @@ h3 span {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Adjusted for desktop */
     margin-bottom: 15px;
     position: relative;
     color: var(--bg-color);
@@ -175,7 +180,7 @@ h3 span {
 }
 
 .intro-text {
-    font-size: 24px;
+    font-size: 1.5rem; /* Adjusted for desktop */
     margin-bottom: 20px;
     color: var(--bg-color);
 }
@@ -433,6 +438,22 @@ h3 span {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem; /* Adjusted for mobile */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Adjusted for mobile */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Adjusted for mobile */
+    }
+
+    .intro-text {
+        font-size: 1.2rem; /* Adjusted for mobile */
+    }
+
     .about-content,
     .skills-grid,
     .contact-container {
@@ -455,14 +476,6 @@ h3 span {
         max-width: 300px;
     }
     
-    .section-title {
-        font-size: 2.5rem;
-    }
-    
-    .section-subtitle {
-        font-size: 0.9rem;
-    }
-    
     .experience-box {
         width: 100%;
     }
@@ -481,15 +494,15 @@ h3 span {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Adjusted for smaller mobile */
     }
     
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Adjusted for smaller mobile */
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Adjusted for smaller mobile */
     }
     
     .section-subtitle {
@@ -497,7 +510,7 @@ h3 span {
     }
     
     .intro-text {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Adjusted for smaller mobile */
     }
 }
 
