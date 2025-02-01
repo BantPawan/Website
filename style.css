@@ -275,7 +275,7 @@ h3 span {
 
 .project-box {
     background-color: #333;
-    width: 400px;
+    width: 250px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -292,7 +292,7 @@ h3 span {
     padding: 20px;
     text-decoration: none;
     color: inherit;
-    height: 200%;
+    height: 100%;
 }
 
 .project-logo {
