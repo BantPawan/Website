@@ -291,11 +291,12 @@ h3 span {
 }
 
 .project-logo {
-    width: 100%;
+    width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
+    border: 4px solid var(--primary-color); /* Added circular border */
     position: relative;
 }
 
@@ -389,6 +390,7 @@ h3 span {
         font-size: 1.3rem;
     }
 }
+
 
 /* Experience Section */
 #experience {
