@@ -1,10 +1,10 @@
+/* Combined CSS File with Final Size Adjustments */
 :root {
     --primary-color: #ff4d4d;
     --secondary-color: #ffffff;
     --bg-color: #000000;
     --maroon: #800000;
     --dark-red: #8B0000;
-    --card-bg: #1a1a1a;
 }
 
 /* Reset and Default Styles */
@@ -15,6 +15,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Body Styling */
 body {
     background: var(--bg-color);
     color: var(--secondary-color);
@@ -23,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,14 +39,19 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Default logo size */
     font-weight: 700;
     color: var(--secondary-color);
-    transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease; /* Smooth transition for logo size */
 }
 
-.logo span { color: var(--primary-color); }
-.logo.big { font-size: 2.5rem; }
+.logo.big {
+    font-size: 2.5rem; /* Bigger logo size */
+}
+
+.logo span {
+    color: var(--primary-color);
+}
 
 nav ul {
     display: flex;
@@ -72,7 +78,9 @@ nav ul li a::after {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover::after { width: 100%; }
+nav ul li a:hover::after {
+    width: 100%;
+}
 
 /* Hero Section */
 .hero {
@@ -86,19 +94,22 @@ nav ul li a:hover::after { width: 100%; }
 }
 
 .hero-title {
-    font-size: 3rem;
+    color: var(--secondary-color) !important;
+    font-size: 3rem; /* Adjusted for desktop */
     font-weight: 700;
     margin: 1rem 0;
     line-height: 1.2;
-    color: var(--secondary-color);
+    -webkit-text-fill-color: var(--secondary-color) !important;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Adjusted for desktop */
     font-weight: 400;
 }
 
-h3 span { color: var(--primary-color); }
+h3 span {
+    color: var(--primary-color);
+}
 
 .typing {
     color: var(--primary-color);
@@ -111,19 +122,149 @@ h3 span { color: var(--primary-color); }
     50% { border-color: var(--primary-color); }
 }
 
+/* Section Heading Styles */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2rem; /* Adjusted for desktop */
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+
+.section-subtitle {
+    font-size: 0.9rem;
+    color: var(--maroon);
+    margin-bottom: 40px;
+    display: block;
+}
+
+/* About Section */
+.about-section {
+    background: var(--secondary-color);
+    padding: 100px 20px;
+}
+
+.about-section .section-title {
+    color: var(--bg-color);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.profile-container {
+    flex: 0 0 45%;
+    text-align: center;
+}
+
+.summary-container {
+    flex: 0 0 50%;
+    text-align: left;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro-text {
+    font-size: 1.2rem; /* Adjusted for desktop */
+    margin-bottom: 20px;
+    color: var(--bg-color);
+}
+
+.summary {
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.know-more-btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Skills Section */
+.skills-section {
+    background: var(--secondary-color);
+    padding: 100px 20px;
+}
+
+.skills-section .section-title {
+    color: var(--bg-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-left {
+    padding-right: 30px;
+}
+
+.skills-right {
+    font-size: 0.9rem;
+}
+
+.skills-heading {
+    color: var(--maroon);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills-description {
+    color: var(--bg-color);
+    line-height: 1.8;
+}
+
+.expertise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-list li {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    background: rgba(255, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-color);
+    color: var(--bg-color);
+}
+
 /* Projects Section */
 #projects {
     padding: 100px 20px;
     background: var(--bg-color);
 }
 
-.section-title {
+#projects .section-title {
+    color: var(--secondary-color);
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-decoration: underline;
     text-underline-offset: 8px;
-    color: var(--secondary-color);
 }
 
 .projects-container {
@@ -136,7 +277,7 @@ h3 span { color: var(--primary-color); }
 }
 
 .project-box {
-    background: var(--card-bg);
+    background: #1a1a1a;
     border-radius: 15px;
     padding: 1.5rem;
     transition: transform 0.3s ease;
@@ -165,9 +306,13 @@ h3 span { color: var(--primary-color); }
     transition: transform 0.3s ease;
 }
 
-.project-box:hover .project-logo img { transform: scale(1.05); }
+.project-box:hover .project-logo img {
+    transform: scale(1.05);
+}
 
-.project-content { color: var(--secondary-color); }
+.project-content {
+    color: var(--secondary-color);
+}
 
 .project-title {
     font-size: 1.5rem;
@@ -230,27 +375,223 @@ h3 span { color: var(--primary-color); }
     box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
 }
 
-/* Other Sections (About, Skills, Experience, Contact) */
-/* ... (Keep your existing styles for other sections here) ... */
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-title { font-size: 2.2rem; }
-    h3 { font-size: 1.2rem; }
-    .section-title { font-size: 2rem; }
-    
     .projects-container {
         grid-template-columns: 1fr;
     }
     
-    .project-box { margin-bottom: 2rem; }
-    .project-title { font-size: 1.3rem; }
+    .project-box {
+        margin-bottom: 2rem;
+    }
+    
+    .project-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Experience Section */
+#experience {
+    padding: 100px 20px;
+}
+
+#experience .section-title {
+    color: var(--secondary-color);
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-box {
+    background-color: #333;
+    width: 45%;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Contact Section - Updated Sizes */
+#contact {
+    padding: 100px 20px;
+    background: var(--secondary-color);
+}
+
+#contact .section-title {
+    color: var(--bg-color);
+}
+
+#contact .section-subtitle {
+    font-size: 0.9rem;
+    color: var(--maroon);
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 0 0 48%;
+    color: var(--bg-color);
+    text-align: left;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info strong {
+    color: var(--bg-color);
+    font-weight: 600;
+    min-width: 85px;
+    font-size: 1.1rem;
+}
+
+.contact-info .red-text {
+    color: var(--dark-red);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    flex: 0 0 48%;
+}
+
+.contact-form::before {
+    content: "Message me";
+    display: block;
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--bg-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem; /* Adjusted for mobile */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Adjusted for mobile */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Adjusted for mobile */
+    }
+
+    .intro-text {
+        font-size: 1rem; /* Adjusted for mobile */
+    }
+
+    .about-content,
+    .skills-grid,
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .profile-container,
+    .summary-container,
+    .skills-left,
+    .skills-right,
+    .contact-info,
+    .contact-form {
+        flex: 1;
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .profile-photo {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .experience-box {
+        width: 100%;
+    }
+
+    /* Mobile Contact Adjustments */
+    .contact-info li {
+        font-size: 1rem;
+    }
+    
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .hero-title { font-size: 1.8rem; }
-    h3 { font-size: 1rem; }
-    .section-title { font-size: 1.8rem; }
+    .hero-title {
+        font-size: 1.8rem; /* Adjusted for smaller mobile */
+    }
+    
+    h3 {
+        font-size: 1rem; /* Adjusted for smaller mobile */
+    }
+    
+    .section-title {
+        font-size: 1.5rem; /* Adjusted for smaller mobile */
+    }
+    
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .intro-text {
+        font-size: 0.9rem; /* Adjusted for smaller mobile */
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
