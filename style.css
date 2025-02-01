@@ -95,7 +95,7 @@ nav ul li a:hover::after {
 
 .hero-title {
     color: var(--secondary-color) !important;
-    font-size: 3.5rem; /* Adjusted for desktop */
+    font-size: 3rem; /* Adjusted for desktop */
     font-weight: 700;
     margin: 1rem 0;
     line-height: 1.2;
@@ -103,7 +103,7 @@ nav ul li a:hover::after {
 }
 
 h3 {
-    font-size: 1.8rem; /* Adjusted for desktop */
+    font-size: 1.5rem; /* Adjusted for desktop */
     font-weight: 400;
 }
 
@@ -130,7 +130,7 @@ h3 span {
 }
 
 .section-title {
-    font-size: 2.2rem; /* Adjusted for desktop */
+    font-size: 2rem; /* Adjusted for desktop */
     margin-bottom: 15px;
     position: relative;
     color: var(--bg-color);
@@ -180,7 +180,7 @@ h3 span {
 }
 
 .intro-text {
-    font-size: 1.5rem; /* Adjusted for desktop */
+    font-size: 1.2rem; /* Adjusted for desktop */
     margin-bottom: 20px;
     color: var(--bg-color);
 }
@@ -296,8 +296,8 @@ h3 span {
 }
 
 .project-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--primary-color);
@@ -439,19 +439,19 @@ h3 span {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem; /* Adjusted for mobile */
+        font-size: 2.2rem; /* Adjusted for mobile */
     }
 
     h3 {
-        font-size: 1.5rem; /* Adjusted for mobile */
+        font-size: 1.2rem; /* Adjusted for mobile */
     }
 
     .section-title {
-        font-size: 2rem; /* Adjusted for mobile */
+        font-size: 1.8rem; /* Adjusted for mobile */
     }
 
     .intro-text {
-        font-size: 1.2rem; /* Adjusted for mobile */
+        font-size: 1rem; /* Adjusted for mobile */
     }
 
     .about-content,
@@ -494,23 +494,23 @@ h3 span {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem; /* Adjusted for smaller mobile */
-    }
-    
-    h3 {
-        font-size: 1.2rem; /* Adjusted for smaller mobile */
-    }
-    
-    .section-title {
         font-size: 1.8rem; /* Adjusted for smaller mobile */
     }
     
+    h3 {
+        font-size: 1rem; /* Adjusted for smaller mobile */
+    }
+    
+    .section-title {
+        font-size: 1.5rem; /* Adjusted for smaller mobile */
+    }
+    
     .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     
     .intro-text {
-        font-size: 1.1rem; /* Adjusted for smaller mobile */
+        font-size: 0.9rem; /* Adjusted for smaller mobile */
     }
 }
 
