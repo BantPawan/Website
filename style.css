@@ -477,6 +477,7 @@ h3 span {
 
 .contact-form {
     flex: 0 0 48%;
+    position: relative;
 }
 
 .contact-form::before {
@@ -488,7 +489,12 @@ h3 span {
     font-weight: 600;
 }
 
-.contact-form label {
+.formbutton-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formbutton-form label {
     display: block;
     margin-bottom: 12px;
     color: var(--bg-color);
@@ -496,8 +502,8 @@ h3 span {
     font-size: 1.1rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.formbutton-form input,
+.formbutton-form textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -505,18 +511,52 @@ h3 span {
     border-radius: 5px;
     background: var(--secondary-color);
     font-size: 1.1rem;
+    color: var(--bg-color);
 }
 
-.submit-btn {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    font-weight: 600;
+.formbutton-form input::placeholder,
+.formbutton-form textarea::placeholder {
+    color: #999;
 }
+
+.formbutton-submit {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    padding: 12px !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.formbutton-submit:hover {
+    opacity: 0.9 !important;
+}
+
+/* Adjust the popup positioning */
+.formbutton-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: var(--secondary-color) !important;
+    padding: 2rem !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2) !important;
+    max-width: 600px !important;
+    width: 90% !important;
+}
+
+/* Close button styling */
+.formbutton-close {
+    color: var(--bg-color) !important;
+    top: 15px !important;
+    right: 15px !important;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
