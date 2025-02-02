@@ -276,77 +276,27 @@
 
         <!-- Right Side: Contact Form -->
         <div class="contact-form">
-            <div id="formspree-button-container"></div>
+            <form action="https://formspree.io/f/xvgzrbge" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </div>
-</section>
-
-<!-- Formspree FormButton Script -->
-<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-<script>
-  window.formbutton = window.formbutton || function() {
-    (formbutton.q = formbutton.q || []).push(arguments)
-  };
-  formbutton("create", {
-    action: "https://formspree.io/f/xvgzrbge",
-    title: "Message Me",
-    container: '#formspree-button-container',
-    fields: [
-      { 
-        type: "text", 
-        label: "Name:", 
-        name: "name",
-        required: true,
-        placeholder: "Your full name"
-      },
-      { 
-        type: "text", 
-        label: "Address:", 
-        name: "address",
-        placeholder: "Your address"
-      },
-      { 
-        type: "email", 
-        label: "Email:", 
-        name: "email",
-        required: true,
-        placeholder: "your@email.com"
-      },
-      { 
-        type: "text", 
-        label: "Subject:", 
-        name: "subject",
-        required: true,
-        placeholder: "Message subject"
-      },
-      {
-        type: "textarea",
-        label: "Message:",
-        name: "message",
-        required: true,
-        placeholder: "Your message here..."
-      },
-      { 
-        type: "submit", 
-        label: "Send Message" 
-      }     
-    ],
-    styles: {
-      title: {
-        backgroundColor: "#2c3e50"
-      },
-      button: {
-        backgroundColor: "#2c3e50"
-      }
-    },
-    theme: "classic",
-    loading: {
-      title: "Sending...",
-      content: "Please wait while we send your message.",
-      backgroundColor: "#2c3e50"
-    }
-  });
-</script>
+    </section>
 
 
     <script src="script.js"></script>
