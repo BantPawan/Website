@@ -420,141 +420,20 @@ h3 span {
 }
 
 /* Contact Section - Updated Sizes */
-#contact {
-    padding: 100px 20px;
-    background: var(--secondary-color);
-}
-
-#contact .section-title {
-    color: var(--bg-color);
-}
-
-#contact .section-subtitle {
-    font-size: 0.9rem;
-    color: var(--maroon);
-    margin-bottom: 40px;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-}
-
-.contact-info {
-    flex: 0 0 48%;
-    color: var(--bg-color);
-    text-align: left;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-info strong {
-    color: var(--bg-color);
-    font-weight: 600;
-    min-width: 85px;
-    font-size: 1.1rem;
-}
-
-.contact-info .red-text {
-    color: var(--dark-red);
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.contact-form {
-    flex: 0 0 48%;
-    position: relative;
-}
-
-.contact-form::before {
-    content: "Message me";
-    display: block;
-    font-size: 1.8rem;
-    color: var(--bg-color);
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.formbutton-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.formbutton-form label {
-    display: block;
-    margin-bottom: 12px;
-    color: var(--bg-color);
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.formbutton-form input,
-.formbutton-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     background: var(--secondary-color);
     font-size: 1.1rem;
-    color: var(--bg-color);
 }
 
-.formbutton-form input::placeholder,
-.formbutton-form textarea::placeholder {
-    color: #999;
-}
-
-.formbutton-submit {
-    background-color: var(--primary-color) !important;
-    color: var(--secondary-color) !important;
-    padding: 12px !important;
-    border: none !important;
-    cursor: pointer !important;
-    border-radius: 5px !important;
-    width: 100% !important;
-    font-weight: 600 !important;
-    font-size: 1.1rem !important;
-    transition: opacity 0.3s ease !important;
-}
-
-.formbutton-submit:hover {
-    opacity: 0.9 !important;
-}
-
-/* Adjust the popup positioning */
-.formbutton-popup {
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    background: var(--secondary-color) !important;
-    padding: 2rem !important;
-    border-radius: 8px !important;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2) !important;
-    max-width: 600px !important;
-    width: 90% !important;
-}
-
-/* Close button styling */
-.formbutton-close {
-    color: var(--bg-color) !important;
-    top: 15px !important;
-    right: 15px !important;
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
 }
 
 
