@@ -274,7 +274,7 @@
             </ul>
         </div>
 
-        <!-- Right Side: Contact Form (FormButton) -->
+        <!-- Right Side: Contact Form -->
         <div class="contact-form">
             <div id="formspree-button-container"></div>
         </div>
@@ -284,13 +284,27 @@
 <!-- Formspree FormButton Script -->
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 <script>
-  /* paste this line in verbatim */
-  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-  /* customize formbutton below*/     
+  window.formbutton = window.formbutton || function() {
+    (formbutton.q = formbutton.q || []).push(arguments)
+  };
   formbutton("create", {
     action: "https://formspree.io/f/xvgzrbge",
-    title: "How can we help?",
+    title: "Message Me",
+    container: '#formspree-button-container',
     fields: [
+      { 
+        type: "text", 
+        label: "Name:", 
+        name: "name",
+        required: true,
+        placeholder: "Your full name"
+      },
+      { 
+        type: "text", 
+        label: "Address:", 
+        name: "address",
+        placeholder: "Your address"
+      },
       { 
         type: "email", 
         label: "Email:", 
@@ -298,21 +312,38 @@
         required: true,
         placeholder: "your@email.com"
       },
+      { 
+        type: "text", 
+        label: "Subject:", 
+        name: "subject",
+        required: true,
+        placeholder: "Message subject"
+      },
       {
         type: "textarea",
         label: "Message:",
         name: "message",
-        placeholder: "What's on your mind?",
+        required: true,
+        placeholder: "Your message here..."
       },
-      { type: "submit" }      
+      { 
+        type: "submit", 
+        label: "Send Message" 
+      }     
     ],
     styles: {
       title: {
-        backgroundColor: "gray"
+        backgroundColor: "#2c3e50"
       },
       button: {
-        backgroundColor: "gray"
+        backgroundColor: "#2c3e50"
       }
+    },
+    theme: "classic",
+    loading: {
+      title: "Sending...",
+      content: "Please wait while we send your message.",
+      backgroundColor: "#2c3e50"
     }
   });
 </script>
