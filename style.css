@@ -391,7 +391,6 @@ h3 span {
     }
 }
 
-
 /* Experience Section */
 #experience {
     padding: 100px 20px;
@@ -419,12 +418,102 @@ h3 span {
     text-align: center;
 }
 
-/* Contact Section - Updated Sizes */
-    border-radius: 5px;
-    background: var(--secondary-color);
-    font-size: 1.1rem;
+/* Updated Contact Section */
+.contact {
+  padding: 100px 20px;
+  background: var(--bg-color);
+  color: var(--secondary-color);
 }
 
+.contact .section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.contact .section-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contact .section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: var(--maroon);
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-callout {
+  flex: 1 1 45%;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info ul li strong {
+  font-weight: 600;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-callout h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.contact-callout p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Mobile Adjustments for Contact Section */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info,
+  .contact-callout {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+/* (Optional) Submit Button for any forms if needed */
 .submit-btn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -436,8 +525,7 @@ h3 span {
     font-weight: 600;
 }
 
-
-/* Responsive Design */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.2rem; /* Adjusted for mobile */
