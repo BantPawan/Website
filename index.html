@@ -1,297 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawan - Data Scientist Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawan - Data Scientist Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">Portfo<span>lio.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="logo">Portfo<span>lio.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2 class="hero-subtitle">Hey there!, I’m</h2>
+      <h1 class="hero-title">Pawan S Bant</h1>
+      <h2 class="hero-job">
+        And I'm a <span class="typing"></span>
+      </h2>
+      <h1 class="hero-job">
+        "Clarifying complexity, refining noise & igniting breakthroughs"
+      </h1>
+      <h3 class="hero-job">Let’s transform insights into impact!</h3>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="hero-subtitle">Hey there!, I’m</h2>
-            <h1 class="hero-title">Pawan S Bant</h1>
-            <h2 class="hero-job">And I'm a <span class="typing"></span></h2>
-            <h1 class="hero-job">"Clarifying complexity, refining noise & igniting breakthroughs"</h2>
-            <h3 class="hero-job">Let’s transform insights into impact!</h3>
-        </div>
-    </section>
-
-    <!-- About Section -->
-<section id="about" class="about-section">
+  <!-- About Section -->
+  <section id="about" class="about-section">
     <div class="section-heading">
-        <h1 class="section-title">About Me</h1>
-        <h2 class="section-subtitle">Professional Summary</h2>
+      <h1 class="section-title ">About Me</h1>
+      <h2 class="section-subtitle">Professional Summary</h2>
     </div>
 
     <div class="about-content">
-        <div class="profile-container">
-            <img src="Pawan_Bant_copy_400x538_copy_400x538.png" alt="Pawan" class="profile-photo">
-        </div>
-        <div class="summary-container">
-            <h3 class="intro-text">
-                I'm <span class="name">Pawan</span>, a<br class="single-line-break">
-                <span class="typing-text"></span>
-            </h3>
-            <p class="summary"> with a strong foundation in analytical modeling, programming, and statistical analysis. Skilled in Python, SQL, and big data technologies, with a focus on extracting actionable insights and automating data-driven processes. Passionate about solving complex problems using AI and machine learning. <span class="full-summary"> <br>I have hands-on experience in building predictive models, optimizing deployment pipelines, and creating interactive data visualization dashboards. My projects showcase expertise in Machine Learning, Deep Learning architectures, and MLOps. <br>Continuously evolving with the latest AI advancements, I am committed to developing scalable, ethical, and high-impact solutions that drive business success. I thrive in dynamic environments where data and innovation intersect. </span> </p>
-            </p>
-            <button class="know-more-btn" id="toggleBtn">Full Profile</button>
-        </div>
+      <div class="profile-container">
+        <img
+          src="Pawan_Bant_copy_400x538_copy_400x538.png"
+          alt="Pawan"
+          class="profile-photo"
+        />
+      </div>
+      <div class="summary-container">
+        <h3 class="intro-text">
+          I'm <span class="name">Pawan</span>, a<br class="single-line-break" />
+          <span class="typing-text"></span>
+        </h3>
+        <p class="summary">
+          with a strong foundation in analytical modeling, programming, and
+          statistical analysis. Skilled in Python, SQL, and big data technologies,
+          with a focus on extracting actionable insights and automating
+          data-driven processes. Passionate about solving complex problems using AI
+          and machine learning.
+          <span class="full-summary" style="display: none;">
+            <br>I have hands-on experience in building predictive models,
+            optimizing deployment pipelines, and creating interactive data
+            visualization dashboards. My projects showcase expertise in Machine
+            Learning, Deep Learning architectures, and MLOps.
+            <br><br>Continuously evolving with the latest AI advancements, I am
+            committed to developing scalable, ethical, and high-impact solutions
+            that drive business success. I thrive in dynamic environments where data
+            and innovation intersect.
+          </span>
+        </p>
+        <button class="know-more-btn" id="toggleBtn">Full Profile</button>
+      </div>
     </div>
-</section>
+  </section>
 
-<style>
-    .single-line-break {
-        line-height: 1;  /* Adjust space between lines */
-    }
-</style>
-    
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="section-heading">
-            <h1 class="section-title">My Skills</h1>
-            <h2 class="section-subtitle">Professional Expertise</h2>
-        </div>
-
-        <div class="skills-grid">
-            <!-- Left Column -->
-            <div class="skills-left">
-                <h3 class="skills-heading">Creative Skills & Expertise</h3>
-                <p class="skills-description">
-                   I'm currently immersing myself in the world of AI and Machine Learning, leveraging my skills to tackle real-world challenges with innovative projects. My journey in data science is fueled by creativity, rigorous analysis, and a passion for transforming complex data into actionable insights.
-                  <span class="full-skills" style="display: none;">
-                   <br>Constantly learning and evolving, I'm dedicated to developing AI solutions that drive business transformation and enrich lives. Let’s collaborate and create something extraordinary!
-                  </span>
-                </p>
-
-                <button class="know-more-btn skills-toggle">Know More</button>
-            </div>
-
-            <!-- Right Column -->
-            <div class="skills-right">
-                <h3 class="skills-heading">Technical Expertise & Competencies</h3>
-                <ul class="expertise-list">
-                    <li><strong>Programming:</strong> Python (NumPy, Pandas, Scikit-learn, TensorFlow, PySpark), SQL</li>
-                    <li><strong>Data Science & ML:</strong> Predictive modeling, ML algorithms, statistical methods, deep learning</li>
-                    <li><strong>Data Visualization:</strong> Power BI (DAX, ETL), Excel (Pivot Tables, Macros), interactive dashboards</li>
-                    <li><strong>Big Data:</strong> PySpark, Delta Lake, data transformation, workflow optimization</li>
-                    <li><strong>Database Management:</strong> MySQL, PostgreSQL, query optimization, database design</li>
-                    <li><strong>MLOps:</strong> Azure ML, Docker, CI/CD pipelines, model deployment</li>
-                    <li><strong>Business Analytics:</strong> Trend analysis, data-driven decision making</li>
-                    <li><strong>Tools:</strong> VS Code, Jupyter, Azure ML Studio, GitHub</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Download Resume -->
-        <div class="download-container">
-            <a href="Pawan_Bant_data_science_resume.pdf" download class="know-more-btn">Download Resume</a>
-        </div>
-    </section>
-
-<!-- Projects Section -->
-<section id="projects">
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
     <div class="section-heading">
-        <h1 class="section-title">Projects</h1>
-        <h2 class="section-subtitle">My Work</h2>
+      <h1 class="section-title">My Skills</h1>
+      <h2 class="section-subtitle">Professional Expertise</h2>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Left Column -->
+      <div class="skills-left">
+        <h3 class="skills-heading">Creative Skills & Expertise</h3>
+        <p class="skills-description">
+          I'm currently immersing myself in the world of AI and Machine Learning,
+          leveraging my skills to tackle real-world challenges with innovative
+          projects.<br> My journey in data science is fueled by creativity, rigorous
+          analysis, and a passion for transforming complex data into actionable
+          insights.
+          <span class="full-skills" style="display: none;">
+            <br>Constantly learning and evolving, I'm dedicated to developing AI
+            solutions that drive business transformation and enrich lives. <br>Let’s
+            collaborate and create something extraordinary!
+          </span>
+        </p>
+
+        <button class="know-more-btn skills-toggle">Know More</button>
+      </div>
+
+      <!-- Right Column -->
+      <div class="skills-right">
+        <h3 class="skills-heading">Technical Expertise & Competencies</h3>
+        <ul class="expertise-list">
+          <li>
+            <strong>Programming:</strong> Python (NumPy, Pandas, Scikit-learn,
+            TensorFlow, PySpark), SQL
+          </li>
+          <li>
+            <strong>Data Science & ML:</strong> Predictive modeling, ML algorithms,
+            statistical methods, deep learning
+          </li>
+          <li>
+            <strong>Data Visualization:</strong> Power BI (DAX, ETL), Excel (Pivot
+            Tables, Macros), interactive dashboards
+          </li>
+          <li>
+            <strong>Big Data:</strong> PySpark, Delta Lake, data transformation,
+            workflow optimization
+          </li>
+          <li>
+            <strong>Database Management:</strong> MySQL, PostgreSQL, query
+            optimization, database design
+          </li>
+          <li>
+            <strong>MLOps:</strong> Azure ML, Docker, CI/CD pipelines, model
+            deployment
+          </li>
+          <li>
+            <strong>Business Analytics:</strong> Trend analysis, data-driven decision
+            making
+          </li>
+          <li>
+            <strong>Tools:</strong> VS Code, Jupyter, Azure ML Studio, GitHub
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Download Resume -->
+    <div class="download-container">
+      <a
+        href="Pawan_Bant_data_science_resume.pdf"
+        download
+        class="know-more-btn"
+        >Download Resume</a
+      >
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-heading">
+      <h1 class="section-title">Projects</h1>
+      <h2 class="section-subtitle">My Work</h2>
     </div>
     <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-box">
-            <div class="project-logo">
-                <a href="https://github.com/BantPawan/Pawan-Project/tree/main/Machine%20Learning%20Project" target="_blank">
-                    <img src="house logi.png" alt="Project 1">
-                </a>
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">Property Price Prediction</h3>
-                <p class="project-description">
-                    Engineered a comprehensive real estate application utilizing advanced data cleaning, feature engineering, and analysis to enhance property price predictions. Achieved a 10% improvement in prediction accuracy through the optimization of regression models and developed a personalized recommendation system. Recognized for effectively simplifying complex concepts and delivering data-driven solutions through detailed visual reports.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Regression</span>
-                    <span class="tech-tag">Statistical Analysis</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/BantPawan/Pawan-Project/tree/main/Machine%20Learning%20Project" 
-                       class="project-link primary" target="_blank">
-                        View Project
-                    </a>
-                    <a href="#" class="project-link secondary">
-                        Details
-                    </a>
-                </div>
-            </div>
+      <!-- Project 1 -->
+      <div class="project-box">
+        <div class="project-logo">
+          <a
+            href="https://github.com/BantPawan/Pawan-Project/tree/main/Machine%20Learning%20Project"
+            target="_blank"
+          >
+            <img src="house logi.png" alt="Project 1" />
+          </a>
         </div>
+        <div class="project-content">
+          <h3 class="project-title">Property Price Prediction</h3>
+          <p class="project-description">
+            Engineered a comprehensive real estate application utilizing advanced
+            data cleaning, feature engineering, and analysis to enhance property
+            price predictions. Achieved a 10% improvement in prediction accuracy
+            through the optimization of regression models and developed a
+            personalized recommendation system. Recognized for effectively
+            simplifying complex concepts and delivering data-driven solutions
+            through detailed visual reports.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Regression</span>
+            <span class="tech-tag">Statistical Analysis</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/BantPawan/Pawan-Project/tree/main/Machine%20Learning%20Project"
+              class="project-link primary"
+              target="_blank"
+              >View Project</a
+            >
+            
+          </div>
+        </div>
+      </div>
 
-        <!-- Project 2 -->
-        <div class="project-box">
-            <div class="project-logo">
-                <a href="https://github.com/BantPawan/Databricks-Project" target="_blank">
-                    <img src="taxilogo.com.png" alt="Project 2">
-                </a>
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">Databricks Project</h3>
-                <p class="project-description">
-                    Built an end-to-end ML application for NYC taxi fare prediction on a 35M-row dataset, improving performance by 13% through advanced data cleaning and feature engineering. Applied feature selection and fine-tuned regression models, boosting accuracy by 15%. Developed a personalized prediction system with interactive visualizations, increasing user engagement by 25%, and deployed via Streamlit and Azure CI/CD pipelines, reducing response time by 30%.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Big Data</span>
-                    <span class="tech-tag">Databricks</span>
-                    <span class="tech-tag">Pyspark</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/BantPawan/Databricks-Project" 
-                       class="project-link primary" target="_blank">
-                        View Project
-                    </a>
-                    <a href="#" class="project-link secondary">
-                        Details
-                    </a>
-                </div>
-            </div>
+      <!-- Project 2 -->
+      <div class="project-box">
+        <div class="project-logo">
+          <a
+            href="https://github.com/BantPawan/Databricks-Project"
+            target="_blank"
+          >
+            <img src="taxilogo.com.png" alt="Project 2" />
+          </a>
         </div>
+        <div class="project-content">
+          <h3 class="project-title">Databricks Project</h3>
+          <p class="project-description">
+            Built an end-to-end ML application for NYC taxi fare prediction on a
+            35M-row dataset, improving performance by 13% through advanced data
+            cleaning and feature engineering. Applied feature selection and
+            fine-tuned regression models, boosting accuracy by 15%. Developed a
+            personalized prediction system with interactive visualizations,
+            increasing user engagement by 25%, and deployed via Streamlit and Azure
+            CI/CD pipelines, reducing response time by 30%.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Big Data</span>
+            <span class="tech-tag">Databricks</span>
+            <span class="tech-tag">Pyspark</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/BantPawan/Databricks-Project"
+              class="project-link primary"
+              target="_blank"
+              >View Project</a
+            >
+            
+          </div>
+        </div>
+      </div>
 
-        <!-- Project 3 -->
-        <div class="project-box">
-            <div class="project-logo">
-                <a href="https://github.com/BantPawan/Pawan-Project/tree/main/Power%20BI%20Project" target="_blank">
-                    <img src="cofee.png" alt="Project 3">
-                </a>
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">Coffee Shop Analysis</h3>
-                <p class="project-description">
-                    Analyzed sales trends and product performance using MySQL, improving efficiency by 12%. Designed a Power BI dashboard with KPIs and heat maps. Enhanced decision-making by 10% through interactive slicers and visualizations.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">Dax</span>
-                    <span class="tech-tag">Data Visualization</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/BantPawan/Pawan-Project/tree/main/Power%20BI%20Project" 
-                       class="project-link primary" target="_blank">
-                        View Project
-                    </a>
-                    <a href="#" class="project-link secondary">
-                        Details
-                    </a>
-                </div>
-            </div>
+      <!-- Project 3 -->
+      <div class="project-box">
+        <div class="project-logo">
+          <a
+            href="https://github.com/BantPawan/Pawan-Project/tree/main/Power%20BI%20Project"
+            target="_blank"
+          >
+            <img src="cofee.png" alt="Project 3" />
+          </a>
         </div>
+        <div class="project-content">
+          <h3 class="project-title">Coffee Shop Analysis</h3>
+          <p class="project-description">
+            Analyzed sales trends and product performance using MySQL, improving
+            efficiency by 12%. Designed a Power BI dashboard with KPIs and heat maps.
+            Enhanced decision-making by 10% through interactive slicers and
+            visualizations.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">Dax</span>
+            <span class="tech-tag">Data Visualization</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/BantPawan/Pawan-Project/tree/main/Power%20BI%20Project"
+              class="project-link primary"
+              target="_blank"
+              >View Project</a
+            >
+            
+          </div>
+        </div>
+      </div>
 
-        <!-- Project 4 -->
-        <div class="project-box">
-            <div class="project-logo">
-                <img src="Bank.png" alt="Project 4">
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">Bank Loan Report</h3>
-                <p class="project-description">
-                    Created a dashboard to track key loan metrics, improving tracking efficiency by 18% with visualizations like line charts, filled maps, and bar charts. Reduced non-performing loans by 10% through portfolio monitoring and analysis of good vs. bad loans.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Excel</span>
-                    <span class="tech-tag">Pivot query</span>
-                    <span class="tech-tag">VBA</span>
-                    <span class="tech-tag">Data Analysis</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/BantPawan/Pawan-Project/tree/main/Advance_Excel_Project" 
-                       class="project-link primary" target="_blank">
-                        View Project
-                    </a>
-                    <a href="#" class="project-link secondary">
-                        Details
-                    </a>
-                </div>
-            </div>
+      <!-- Project 4 -->
+      <div class="project-box">
+        <div class="project-logo">
+          <img src="Bank.png" alt="Project 4" />
         </div>
+        <div class="project-content">
+          <h3 class="project-title">Bank Loan Report</h3>
+          <p class="project-description">
+            Created a dashboard to track key loan metrics, improving tracking
+            efficiency by 18% with visualizations like line charts, filled maps,
+            and bar charts. Reduced non-performing loans by 10% through portfolio
+            monitoring and analysis of good vs. bad loans.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Excel</span>
+            <span class="tech-tag">Pivot query</span>
+            <span class="tech-tag">VBA</span>
+            <span class="tech-tag">Data Analysis</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/BantPawan/Pawan-Project/tree/main/Advance_Excel_Project"
+              class="project-link primary"
+              target="_blank"
+              >View Project</a
+            >
+            
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Work Experience Section -->
-<section id="experience" class="experience">
+  <!-- Work Experience Section -->
+  <section id="experience" class="experience">
     <div class="section-heading">
-        <h1 class="section-title">Work Experience</h1>
-        <h2 class="section-subtitle">Professional Journey</h2>
+      <h1 class="section-title">Work Experience</h1>
+      <h2 class="section-subtitle">Professional Journey</h2>
     </div>
     <div class="experience-container">
-        <div class="experience-box">
-            <h3 class="project-title">Besant Technology</h3>
-            <ul style="list-style-position: inside; padding-left: 0;">
-                <li>Developed strong proficiency in data manipulation and analysis using Python, SQL, and Excel.</li>
-                <li>Implemented machine learning models for predictive analytics and statistical insights.</li>
-                <li>Created interactive dashboards using Power BI to derive actionable business insights.</li>
-                <li>Conducted data cleaning, feature engineering, and model evaluation for end-to-end data science projects.</li>
-                <li>Solved practical business problems through case studies and analysis of real-world datasets.</li>
-            </ul>
-        </div>
+      <div class="experience-box">
+        <h3 class="project-title">Besant Technology</h3>
+        <ul style="list-style-position: inside; padding-left: 0;">
+          <li>
+            Developed strong proficiency in data manipulation and analysis using
+            Python, SQL, and Excel.
+          </li>
+          <li>
+            Implemented machine learning models for predictive analytics and
+            statistical insights.
+          </li>
+          <li>
+            Created interactive dashboards using Power BI to derive actionable
+            business insights.
+          </li>
+          <li>
+            Conducted data cleaning, feature engineering, and model evaluation for
+            end-to-end data science projects.
+          </li>
+          <li>
+            Solved practical business problems through case studies and analysis of
+            real-world datasets.
+          </li>
+        </ul>
+      </div>
     </div>
-</section>
-    
-    <!-- Contact Section -->
-<section id="contact" class="contact">
-  <div class="section-heading">
-    <h1 class="section-title">Contact Me</h1>
-    <h2 class="section-subtitle">Let’s Connect Professionally</h2>
-  </div>
+  </section>
 
-  <div class="contact-container">
-    <!-- Left Side: Contact Information -->
-    <div class="contact-info">
-      <p>I'm always excited to explore new opportunities and collaborations. Reach out to me through any of the channels below:</p>
-      <ul>
-        <li><strong>Name:</strong> <span class="red-text">Pawan S Bant</span></li>
-        <li><strong>Location:</strong> <span class="red-text">Bengaluru, India</span></li>
-        <li><strong>Email:</strong> <a href="mailto:bant@gmail.com" class="red-text">bant@gmail.com</a></li>
-        <li>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/BantPawan" class="red-text" target="_blank">GitHub Profile</a>
-        </li>
-        <li>
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/pawan-s-bant" class="red-text" target="_blank">LinkedIn Profile</a>
-        </li>
-      </ul>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-heading">
+      <h1 class="section-title">Contact Me</h1>
+      <h2 class="section-subtitle">Let’s Connect Professionally</h2>
     </div>
 
-    <!-- Right Side: Professional Call-to-Action -->
-    <div class="contact-callout">
-      <h3>Get In Touch</h3>
-      <p>
-        Whether you're interested in a collaboration, want to discuss innovative projects, or just say hello, feel free to connect with me. I look forward to building meaningful professional relationships.
-      </p>
-      <p>
-        For quick responses, send me an email or connect with me on GitHub or LinkedIn.
-      </p>
+    <div class="contact-container">
+      <!-- Left Side: Contact Information -->
+      <div class="contact-info">
+        <p>
+          I'm always excited to explore new opportunities and collaborations.
+          <br />Reach out to me through any of the channels below:
+        </p>
+        <ul>
+          <li>
+            <strong>Name:</strong> <span class="red-text">Pawan S Bant</span>
+          </li>
+          <li>
+            <strong>Location:</strong> <span class="red-text">Bengaluru, India</span>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:bant@gmail.com" class="red-text">bantpawan@gmail.com</a>
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/BantPawan" class="red-text" target="_blank"
+              >GitHub Profile</a
+            >
+          </li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/pawan-bant/"
+              class="red-text"
+              target="_blank"
+              >LinkedIn Profile</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Side: Professional Call-to-Action -->
+      <div class="contact-callout">
+        <h3>Get In Touch</h3>
+        <p>
+          Whether you're interested in a collaboration, want to discuss innovative
+          projects, or just say hello, feel free to connect with me.
+          <br />I look forward to building meaningful professional relationships.
+        </p>
+        <p>
+          For quick responses, send me an email or connect with me on GitHub or
+          LinkedIn.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
 
-
-    <script src="script.js"></script>
+  <!-- Inline styles for quick adjustments -->
+  <style>
+    .single-line-break {
+      line-height: 0.5;
+    }
+  </style>
 </body>
 </html>
