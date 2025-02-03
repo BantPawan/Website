@@ -234,9 +234,11 @@ h3 span {
     margin-bottom: 0.5rem;
 }
 
+/* Adjusted Skills Description to a maintained size */
 .skills-description {
     color: var(--bg-color);
     line-height: 1.8;
+    font-size: 1rem;
 }
 
 .expertise-list {
@@ -421,8 +423,8 @@ h3 span {
 /* Updated Contact Section */
 .contact {
   padding: 100px 20px;
-  background: var(--bg-color);
-  color: var(--secondary-color);
+  background: var(--secondary-color);  /* White background */
+  color: var(--bg-color);               /* Dark text */
 }
 
 .contact .section-heading {
@@ -434,7 +436,7 @@ h3 span {
 .contact .section-title {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: var(--secondary-color);
+  color: var(--bg-color);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -463,6 +465,7 @@ h3 span {
 .contact-info p {
   font-size: 1.1rem;
   margin-bottom: 20px;
+  color: var(--bg-color);
 }
 
 .contact-info ul {
@@ -473,6 +476,7 @@ h3 span {
 .contact-info ul li {
   margin-bottom: 10px;
   font-size: 1.1rem;
+  color: var(--bg-color);
 }
 
 .contact-info ul li strong {
@@ -498,6 +502,7 @@ h3 span {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
+  color: var(--bg-color);
 }
 
 /* Mobile Adjustments for Contact Section */
