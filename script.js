@@ -2,7 +2,7 @@
 
 // Typing effect for the hero section
 const initTypingEffect = () => {
-  const words = ["Data Scientist", "ML Engineer", "Big Data Analyst"];
+  const words = ["Data Scientist", "ML Engineer", "AI/ML"];
   const typingElement = document.querySelector(".typing");
   if (!typingElement) return;
 
