@@ -1,150 +1,37 @@
-// Combined JavaScript File with All Features
-
-// Typing effect for the hero section
-const initTypingEffect = () => {
-  const words = ["Data Scientist", "ML Engineer", "AI/ML"];
-  const typingElement = document.querySelector(".typing");
-  if (!typingElement) return;
-
-  let i = 0,
-    j = 0;
-  let isDeleting = false;
-
-  const typeEffect = () => {
-    const currentWord = words[i];
-    if (!isDeleting && j <= currentWord.length) {
-      typingElement.textContent = currentWord.substring(0, j++);
-    } else if (isDeleting && j >= 0) {
-      typingElement.textContent = currentWord.substring(0, j--);
-    } else {
-      isDeleting = !isDeleting;
-      if (!isDeleting) i = (i + 1) % words.length;
-      setTimeout(typeEffect, 500);
-      return;
-    }
-    setTimeout(typeEffect, isDeleting ? 100 : 200);
-  };
-  typeEffect();
-};
-
-// Typing effect for the About section
-const initAboutTypingEffect = () => {
-  const roles = [
-    "Data Scientist",
-    "Machine Learning Enthusiast",
-    "Deep Learning Enthusiast",
-  ];
-  const typingTextAbout = document.querySelector(".typing-text");
-  if (!typingTextAbout) return;
-
-  let roleIndex = 0,
-    charIndex = 0;
-  let isDeleting = false;
-
-  const typeRole = () => {
-    const currentRole = roles[roleIndex];
-    if (!isDeleting) {
-      typingTextAbout.textContent = currentRole.substring(0, charIndex++);
-      if (charIndex <= currentRole.length) {
-        setTimeout(typeRole, 100);
-      } else {
-        isDeleting = true;
-        setTimeout(typeRole, 2000);
-      }
-    } else {
-      typingTextAbout.textContent = currentRole.substring(0, charIndex--);
-      if (charIndex >= 0) {
-        setTimeout(typeRole, 50);
-      } else {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        setTimeout(typeRole, 500);
-      }
-    }
-  };
-  typeRole();
-};
-
-// Toggle functionality for About and Skills sections
-const setupContentToggles = () => {
-  // About Section Toggle
-  const aboutToggleBtn = document.getElementById("toggleBtn");
-  const fullSummary = document.querySelector(".full-summary");
-  if (aboutToggleBtn && fullSummary) {
-    aboutToggleBtn.addEventListener("click", () => {
-      const isVisible = fullSummary.style.display === "block";
-      fullSummary.style.display = isVisible ? "none" : "block";
-      aboutToggleBtn.textContent = isVisible ? "Full Profile" : "Short Profile";
-    });
-  }
-
-  // Skills Section Toggle
-  const skillsToggle = document.querySelector(".skills-toggle");
-  const fullSkills = document.querySelector(".full-skills");
-  if (skillsToggle && fullSkills) {
-    skillsToggle.addEventListener("click", () => {
-      const isVisible = fullSkills.style.display === "block";
-      fullSkills.style.display = isVisible ? "none" : "block";
-      skillsToggle.textContent = isVisible ? "Know More" : "Know Less";
-    });
-  }
-};
-
-// Form submission handler for the contact form
-const handleFormSubmission = () => {
-  const contactForm = document.querySelector(".contact-form form");
-  if (!contactForm) return;
-
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const name = document.getElementById("name").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (!name || !message) {
-      alert("Please fill out both the name and message fields.");
-      return;
-    }
-
-    contactForm.reset();
-    alert("Your message has been sent successfully!");
-  });
-};
-
-// Make project boxes clickable
-const makeProjectsClickable = () => {
-  document.querySelectorAll(".project-box").forEach((box) => {
-    box.addEventListener("click", (e) => {
-      // Prevent triggering if clicking on a nested link
-      if (e.target.tagName === "A") return;
-      const link = box.querySelector("a");
-      if (link) {
-        window.open(link.href, "_blank");
-      }
-    });
-  });
-};
-
-// Smooth scrolling for anchor links
-const initializeSmoothScroll = () => {
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    });
-  });
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  initTypingEffect();
-  initAboutTypingEffect();
-  setupContentToggles();
-  handleFormSubmission();
-  makeProjectsClickable();
-  initializeSmoothScroll();
+'use strict';
+const menu = document.querySelector('.menu-toggle');
+const links = document.querySelector('#nav-links');
+menu.hidden = false;
+links.classList.add('collapsible');
+function closeMenu() {
+  menu.setAttribute('aria-expanded', 'false');
+  links.classList.remove('is-open');
+}
+menu.addEventListener('click', () => {
+  const expanded = menu.getAttribute('aria-expanded') === 'true';
+  menu.setAttribute('aria-expanded', String(!expanded));
+  links.classList.toggle('is-open', !expanded);
 });
+links.addEventListener('click', event => {
+  if (event.target.closest('a')) closeMenu();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    menu.focus();
+  }
+});
+const copyButton = document.querySelector('#copy-email');
+if (navigator.clipboard && window.isSecureContext) {
+  copyButton.hidden = false;
+  copyButton.addEventListener('click', async () => {
+    const status = document.querySelector('#copy-status');
+    try {
+      await navigator.clipboard.writeText('bantpawan@gmail.com');
+      status.textContent = 'Email copied.';
+    } catch {
+      status.textContent = 'Please select the email above to copy it.';
+    }
+  });
+}
+document.querySelector('#year').textContent = new Date().getFullYear();
